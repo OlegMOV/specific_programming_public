@@ -121,7 +121,7 @@ body.marp-vscode blockquote {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
             body {
-                font-family: 'Times New Roman', Times, serif;
+                font-family: 'UAF sans', Times, serif;
                 font-size: 14px;
                 line-height: 1.6;
             }
@@ -237,12 +237,13 @@ body.marp-vscode blockquote {
 body {
     font-family: 'UAF sans', Times, serif;
 }
+
 table {
     width: 100%;
 }
+
 h2 {
     font-family: 'Volja', Times, serif;
-
 }
 
 p,
@@ -294,7 +295,7 @@ br + strong {
                     data-max-text-size="50000"></span>
                 <h2 id="групове-заняття-2">Групове заняття 2</h2>
 <h3 id="тема-1-середовище-для-проведення-аналізу-та-обробки-масивів-даних">Тема 1: Середовище для проведення аналізу та обробки масивів даних</h3>
-<h3 id="заняття-3-jupyter-notebook-робота-з-чарунками-типу-markdown">Заняття 3: Jupyter Notebook. Робота з чарунками типу Markdown</h3>
+<h3 id="заняття-4-jupyter-notebook-робота-з-чарунками-типу-markdown">Заняття 4: Jupyter Notebook. Робота з чарунками типу Markdown</h3>
 <h3 id="результати-заняття">Результати заняття</h3>
 <p><em>(слухач зможе)</em></p>
 <ol>
@@ -392,7 +393,7 @@ br + strong {
 </code></pre>
 <blockquote>
 <p><strong><em>Отримано</em></strong>:<br>
-<img src="./fig_3_1.avif" alt="Текст заміщення картинки" title="Тут вказана назва картинки"></p>
+<img src="file:///d:\PROJECTS\specific_programming\src\04_GL\fig_3_1.avif" alt="Текст заміщення картинки" title="Тут вказана назва картинки"></p>
 </blockquote>
 <p>Рис. 1.1</p>
 <p>Синтаксис такого запису передбачає наступну конструкцію:</p>
@@ -408,7 +409,7 @@ br + strong {
 </code></pre>
 <blockquote>
 <p><strong><em>Отримано</em></strong>:<br>
-<img src="./monkey-kid-coding.gif" alt="alt" title="Тут вказана назва картинки"></p>
+<img src="file:///d:\PROJECTS\specific_programming\src\04_GL\monkey-kid-coding.gif" alt="alt" title="Тут вказана назва картинки"></p>
 </blockquote>
 <p>Рис. 1.2</p>
 <p>У випадку необхідності змінити розмір зображення необхідно застосовувати правила мови розмітки <strong>HTML</strong></p>
@@ -426,10 +427,10 @@ br + strong {
 <blockquote>
 <p><strong><em>Отримано</em></strong>:</p>
 </blockquote>
-<img src="./fig_3_1.avif" height="100" alt="Тут вказана назва картинки"/>
+<img src="file:///d:\PROJECTS\specific_programming\src\04_GL\fig_3_1.avif" height="100" alt="Тут вказана назва картинки"/>
 <p>Рис. 1.3</p>
 <p>При застосуванні додаткового контейнеру:</p>
-<div style="display:flex;justify-content:center;"><img src="fig_3_1.avif" alt="Тут вказана назва картинки" height="100"/></div>
+<div style="display:flex;justify-content:center;"><img src="file:///d:\PROJECTS\specific_programming\src\04_GL\fig_3_1.avif" alt="Тут вказана назва картинки" height="100"/></div>
 <p>Рис. 1.4</p>
 <p>За необхідності зображення може бути посиланням, яке працює за розглянутими <a href="#%D0%BF%D0%BE%D1%81%D0%B8%D0%BB%D0%B0%D0%BD%D0%BD%D1%8F">вище</a> правилами. Для цього вираз на виведення картинки вкладається у квадратні дужки виразу, що описує посилання</p>
 <blockquote>
@@ -441,7 +442,7 @@ br + strong {
 <p><strong><em>Отримано</em></strong>:</p>
 </blockquote>
 <div style="display:flex;justify-content:center;">
-<a href='#посилання'><img src="./fig_3_1.avif" alt="Тут вказано назва переходу за посиланням" height="100"/></a></div>
+<a href='#посилання'><img src="file:///d:\PROJECTS\specific_programming\src\04_GL\fig_3_1.avif" alt="Тут вказано назва переходу за посиланням" height="100"/></a></div>
 <blockquote>
 <p><strong><em>Практичне завдання 1</em></strong></p>
 </blockquote>
@@ -456,7 +457,7 @@ br + strong {
 </div>
 <h4 id="робота-з-графікою">Робота з графікою</h4>
 <p>Для роботи з графікою одним із способів є застосування синтаксису застосунку <strong>Mermaid</strong>. У випадку роботи у редакторі VS Code необхідно встановити розширення <strong>Markdown Preview Mermaid Support</strong>, що дозволяє переглянути результати введення.</p>
-<p><img src="./fig_3_2.png" alt="Логотип розширення для VS Code">
+<p><img src="file:///d:\PROJECTS\specific_programming\src\04_GL\fig_3_2.png" alt="Логотип розширення для VS Code">
 Рис. 1.5.</p>
 <p><strong>Mermaid</strong> передбачає використання кількох типів графічних відображень. Розглянемо деякі з них.
 Синтаксис для створення графічних схем достатньо простий, для цього код для побудови запланованого зображення записується у потрійні зворотні лапки,наприклад:</p>
@@ -773,7 +774,44 @@ config:
     J-&gt;&gt;A: Great!
     A-&gt;&gt;C: Hello Bob, how is Charley?
     D-&gt;&gt;C: Hello Charley, how are you?</div></pre>
-<p>Рис. 1.16.</p>
+<p>Рис. 1.17.</p>
+<div class="markdown-alert markdown-alert-tip"><p class="markdown-alert-title"><svg class="octicon octicon-light-bulb mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 1.5c-2.363 0-4 1.69-4 3.75 0 .984.424 1.625.984 2.304l.214.253c.223.264.47.556.673.848.284.411.537.896.621 1.49a.75.75 0 0 1-1.484.211c-.04-.282-.163-.547-.37-.847a8.456 8.456 0 0 0-.542-.68c-.084-.1-.173-.205-.268-.32C3.201 7.75 2.5 6.766 2.5 5.25 2.5 2.31 4.863 0 8 0s5.5 2.31 5.5 5.25c0 1.516-.701 2.5-1.328 3.259-.095.115-.184.22-.268.319-.207.245-.383.453-.541.681-.208.3-.33.565-.37.847a.751.751 0 0 1-1.485-.212c.084-.593.337-1.078.621-1.489.203-.292.45-.584.673-.848.075-.088.147-.173.213-.253.561-.679.985-1.32.985-2.304 0-2.06-1.637-3.75-4-3.75ZM5.75 12h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5ZM6 15.25a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Z"></path></svg>Для відображення діаграм у документі jupyter notebook, необхідно створити функцію, яка буде виводити діаграми</p><p></p>
+</div>
+<pre><code class="language-python"><span class="hljs-keyword">import</span> base64
+<span class="hljs-keyword">from</span> IPython.display <span class="hljs-keyword">import</span> Image, display
+
+<span class="hljs-keyword">def</span> <span class="hljs-title function_">mm</span>(<span class="hljs-params">graph</span>):
+    graphbytes = graph.encode(<span class="hljs-string">&quot;utf8&quot;</span>)
+    base64_bytes = base64.urlsafe_b64encode(graphbytes)
+    base64_string = base64_bytes.decode(<span class="hljs-string">&quot;ascii&quot;</span>)
+    display(Image(url=<span class="hljs-string">&quot;https://mermaid.ink/img/&quot;</span> + base64_string))
+</code></pre>
+<p>Рис. 1.18 Текст функції</p>
+<p>І у подальшому у чарунках типу <code>code</code> застосовувати наступним чином:</p>
+<blockquote>
+<p><strong><em>Введено</em></strong>:</p>
+</blockquote>
+<pre><code class="language-python">mm(<span class="hljs-string">&quot;&quot;&quot;
+flowchart LR
+    C@{ shape: docs, label: &quot;Multiple Documents&quot;}
+    D@{ shape: procs, label: &quot;Process Automation&quot;}
+    E@{ shape: paper-tape, label: &quot;Paper Records&quot;}
+    C --&gt; D
+    D ==&gt; E
+
+&quot;&quot;&quot;</span>)
+</code></pre>
+<blockquote>
+<p><strong><em>Отримано</em></strong>:</p>
+</blockquote>
+<pre style="all:unset;"><div class="mermaid">flowchart LR
+
+    C@{ shape: docs, label: "Multiple Documents"}
+    D@{ shape: procs, label: "Process Automation"}
+    E@{ shape: paper-tape, label: "Paper Records"}
+    C --&gt; D
+    D ==&gt; E</div></pre>
+<hr>
 <blockquote>
 <p><strong><em>Завдання на самостійну підготовку</em></strong></p>
 <ol>

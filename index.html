@@ -6,7 +6,7 @@
     <title>Applied programming discipline</title>
     <style>
       body {
-        font-family: "Segoe UI", sans-serif;
+        font-family: "UAF sans", sans-serif;
         background-color: #f4f4f4;
         margin: 0;
         padding: 0;
@@ -53,6 +53,22 @@
         border-radius: 5px;
         margin-top: 20px;
       }
+      ul.lessons {
+        list-style-type: none;
+        padding: 0;
+        margin: 20px 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      a {
+        margin-left: 1rem;
+        color: #008cba;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -96,16 +112,72 @@
       </p>
 
       <h2>Lessons</h2>
-      <a href="./SP_01__LL.html" class="cta-button">Л_01</a>
-      <a href="./SP_02__GL.html" class="cta-button">Гр_01</a>
-      <a href="./SP_03__PL.html" class="cta-button">Пр_01</a>
-      <a href="./SP_04__GL.html" class="cta-button">Гр_02</a>
-      <a href="./SP_05__PL.html" class="cta-button">Пр_02</a>
-      <a href="./SP_06__GL.html" class="cta-button">Гр_03</a>
-      <a href="./SP_07__PL.html" class="cta-button">Пр_03</a>
-      <a href="./SP_08__GL.html" class="cta-button">Гр_04</a>
-      <a href="./SP_09__PL.html" class="cta-button">Пр_04</a>
-      <a href="./SP_10__GL.html" class="cta-button">Гр_05</a>
+      <h3><b>Тема 1</b>: <i>Середовище для обробки масивів даних</i></h3>
+      <ul class="lessons">
+        <li>
+          <b>01_LL</b>:<a href="./SP_01__LL.html" class="">
+            Основи науки про дані. Введення в аналіз даних</a
+          >
+        </li>
+        <li>
+          <b>02_GL</b>:<a href="./SP_02__GL.html" class="">
+            Jupyter Notebook. Основи роботи
+          </a>
+        </li>
+        <li>
+          <b>03_PL</b>:<a href="./SP_03__PL.html" class="">
+            Jupyter Notebook. Встановлення та початок роботи
+          </a>
+        </li>
+        <li>
+          <b>04_GL</b>:<a href="./SP_04__GL.html" class=""
+            >Jupyter Notebook. Робота з чарунками типу Markdown
+          </a>
+        </li>
+        <li>
+          <b>05_PL</b>:<a href="./SP_05__PL.html" class=""
+            >Jupyter Notebook. Робота з графічними елементами текстових полів
+          </a>
+        </li>
+        <li>
+          <b>06_GL</b>:<a href="./SP_06__GL.html" class=""
+            >Ipywidgets. Елементи графічного інтерфейсу
+          </a>
+        </li>
+        <li>
+          <b>07_PL</b>:<a href="./SP_07__PL.html" class=""
+            >Ipywidgets. Розробка інтерфейсу користувача
+          </a>
+        </li>
+        <li>
+          <b>08_GL</b>:<a href="./SP_08__GL.html" class=""
+            >PIL. Обробка файлів із зображеннями
+          </a>
+        </li>
+        <li>
+          <b>09_PL</b>:<a href="./SP_09__PL.html" class=""
+            >Робота із файлами зображень
+          </a>
+        </li>
+        <li>
+          <b>10_GL</b>:
+          <a href="./SP_10__GL.html" class=""
+            >NumPy. Робота одномірними та багатомірними масивами даних
+          </a>
+        </li>
+        <li>
+          <b>11_PL</b>:
+          <a href="./SP_11__PL.html" class=""
+            >NumPy. Застосування бібліотеки для роботи з масивами даних
+          </a>
+        </li>
+        <li>
+          <b>12_GL</b>:
+          <a href="./SP_12__GL.html" class=""
+            >Pandas. Робота з фреймами даних
+          </a>
+        </li>
+      </ul>
     </section>
 
     <footer>
