@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця студентів та занять</title>
+    <link rel="stylesheet" href="site-lib/styles/main-styles.css">
+    <link rel="stylesheet" href="site-lib/styles/global-variable-styles.css">
+    <style>
+        .student-table-container {
+            max-width: 100vw;
+            overflow-x: auto;
+            padding: 2rem;
+        }
+        table.student-table {
+            border-collapse: collapse;
+            width: 100%;
+            background: var(--background-primary, #fff);
+            color: var(--text-normal, #222);
+            font-family: inherit;
+            font-size: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .student-table th, .student-table td {
+            border: 1px solid var(--background-modifier-border, #ccc);
+            padding: 0.5rem 0.7rem;
+            text-align: center;
+        }
+        .student-table th {
+            background: var(--background-secondary, #f5f5f5);
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .student-table tr:nth-child(even) {
+            background: var(--background-secondary-alt, #fafafa);
+        }
+        .student-table tr:hover {
+            background: var(--background-modifier-hover, #e6f7ff);
+        }
+        .student-name {
+            font-weight: 500;
+            text-align: left;
+            background: var(--background-secondary, #f5f5f5);
+        }
+        .est_obj {
+            color: rgb(17, 15, 127);
+        }
+        .est_sbj {
+            color:red;
+            font-size: large;
+            font-weight: 800;
+        }
+        .max_score, .result_ball {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="student-table-container">
+        <table class="student-table">
+            <thead>
+                <tr>
+                    <th>Студент</th>
+                    <!-- 36 занять -->
+                    <!-- JS вставить -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 15 студентів, JS вставить -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // const lessons = 36;
+        const students_num = Array.from({length: 15}, (_, i) => `0${i+1}`.slice(-2));
+        const lesData = [['Гр_1', 3], ['ЛР_1', 4], ['Гр_2', 3], ['ЛР_2', 4],['Гр_3', 2], ['ЛР_3', 3], ['ПМР_1',5],
+            ['Гр_4', 2], ['ЛР_4', 3], ['Гр_5', 2], ['ЛР_5', 3], ['Гр_6', 2], ['ЛР_6', 3], ['Гр_7', 2], ['ЛР_7', 3], ['МП_1',2], ['ПМР_2',5],
+            ['Гр_8', 2], ['ЛР_8', 4], ['Гр_9', 2], ['ЛР_9', 4], ['МП_2',2], ['ПМР_3',5], ['∑', 70]];
+        const csvUrl = 'assets/score_grades.csv';
+
+        // Парсер CSV
+        function parseCSV(text) {
+            const rows = text.trim().split('\n');
+            const headers = lesData.map(item=>item[0]);
+            return rows.map(row => {
+                const values = row.split(',');
+                const obj = {};
+                headers.forEach((h, i) => obj[h.trim()] = (values[i]) ? values[i].trim(): '');
+                return obj;
+            });
+        }
+        
+        
+            // Генерація заголовків
+        function renderTable(students) {
+            const theadRow = document.querySelector('.student-table thead tr');
+            for (let ld of lesData) {
+                const th = document.createElement('th');
+                th.innerHTML = `<pre>${ld[0]}\nmax: <span class='max_score'>${ld[1]}</span></pre>`;
+                theadRow.appendChild(th);
+            }
+
+            const tbody = document.querySelector('.student-table tbody');
+            students.forEach((student, i) => {
+                console.log('student: ', student)
+                console.log('students: ', Object.entries(student));
+                const tr = document.createElement('tr');
+                const tdName = document.createElement('td');
+                tdName.textContent = students_num[i];
+                tdName.className = 'student-name';
+                tr.appendChild(tdName);
+                
+                Object.entries(student).map((item)=>{
+                    const td = document.createElement('td');
+                    if (item[1] && item[1].trim() != '-'){
+                        const [gr1, gr2, est_obj, est_sbj] = item[1].split('_');
+                        td.innerHTML = `<div>${gr1}+${gr2}=<span class='result_ball'>${Math.floor((parseFloat(gr1)+parseFloat(gr2))*100)/100}</span></div><div><span class='est_obj'>${est_obj}</span> ~ <span class='est_sbj'>${est_sbj}</span></div>`;
+                        tr.appendChild(td);
+                    } else {
+                        td.textContent = ''
+                        tr.appendChild(td);
+                    }
+                })
+
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Читаємо CSV та будуємо таблицю
+        fetch(csvUrl)
+            .then(resp => resp.text())
+            .then(text => {
+                const students = parseCSV(text);
+                console.log('result: ', students);
+                renderTable(students);
+            })
+            .catch(() => {
+                // Якщо не вдалося завантажити CSV, fallback
+                const students = Array.from({length: 15}, (_, i) => ({Student: `Студент ${i+1}`}));
+                // renderTable(students);
+            });
+    </script>
+</body>
+</html>
