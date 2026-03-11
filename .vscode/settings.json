@@ -5,7 +5,7 @@
       "strings": false
     },
     "editor.acceptSuggestionOnEnter": "off",
-    "editor.hover.enabled": false,
+    "editor.hover.enabled": "off",
     "editor.wordBasedSuggestions": "off",
     "editor.suggestOnTriggerCharacters": false,
     "editor.inlineSuggest.enabled": false,
