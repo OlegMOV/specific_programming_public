@@ -1,13 +1,13 @@
   {
-    "editor.quickSuggestions": {
-      "other": false,
-      "comments": false,
-      "strings": false
-    },
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.hover.enabled": "off",
-    "editor.wordBasedSuggestions": "off",
-    "editor.suggestOnTriggerCharacters": false,
-    "editor.inlineSuggest.enabled": false,
-    "editor.parameterHints.enabled": false
+    // "editor.quickSuggestions": {
+    //   "other": false,
+    //   "comments": false,
+    //   "strings": false
+    // },
+    // "editor.acceptSuggestionOnEnter": "off",
+    // "editor.hover.enabled": "off",
+    // "editor.wordBasedSuggestions": "off",
+    // "editor.suggestOnTriggerCharacters": false,
+    // "editor.inlineSuggest.enabled": false,
+    // "editor.parameterHints.enabled": false
   }
