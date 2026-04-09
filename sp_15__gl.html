@@ -1,0 +1,797 @@
+<!DOCTYPE html> <html lang="en"><head>
+<title>sp_15__gl</title>
+<base href=".">
+<meta name="pathname" content="sp_15__gl.html">
+<meta name="description" content="mov_vault - sp_15__gl">
+<meta property="og:title" content="sp_15__gl">
+<meta property="og:description" content="mov_vault - sp_15__gl">
+<meta property="og:type" content="website">
+<meta property="og:url" content="sp_15__gl.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="mov_vault"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="site-lib/media/favicon.png"><link rel="stylesheet" href="site-lib/styles/obsidian.css"><link rel="preload" href="site-lib/styles/other-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/other-plugins.css"></noscript><link rel="stylesheet" href="site-lib/styles/theme.css"><link rel="preload" href="site-lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="site-lib/styles/supported-plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/supported-plugins.css"></noscript><link rel="preload" href="site-lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="site-lib/styles/main-styles.css"></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script></head><body class="publish css-settings-manager mod-windows is-frameless is-hidden-frameless styled-scrollbars show-inline-title show-ribbon show-view-header background-settings-workplace-theme-light-in-the-note background-settings-workplace-theme-dark-in-the-sky background-image-settings-markdown-page-transparent notebook-liked-markdown-page-grid-notebook-1 panel-page-bg-theme-light-wall panel-page-bg-theme-dark-plant layout-style-options-default bt-bubble-layout-hide-borders bt-default-unordered-list list-no-border bt-connected-indent-hover bt-colorful-connected-indent-hover folder-icons remove-first-folder-icon remove-arrow bt-toggle-colorful-folder folder-style-change-options-colorful-border folder-colorful-six table-width-100 enable-alternative-checkboxes default-loading-page loading-text-typing-style tag-default setting-style-traditional default-tab resizable-mermaid admonition-bg-color-same style-options-for-admonition-plugin style-options-for-buttons-plugin dataview-list-style-pacman memos-banner-gradient thino-frosted-style thino-background-default quiet-outline-optimize code-theme-solarized-light code-line-number whole-code-wrap codebox-frosted-glass is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"></div><div id="center-content" class="leaf"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="_0"></h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h2"><h2 data-heading="Групове заняття № 7" dir="auto" class="heading" id="Групове_заняття_№_7_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Групове заняття № 7</h2></div><div class="el-h3"><h3 data-heading="*Тема 2:* Робота з масивами даних" dir="auto" class="heading" id="*Тема_2*_Робота_з_масивами_даних_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><em>Тема 2:</em> Робота з масивами даних</h3></div><div class="el-h3"><h3 data-heading="*Заняття 15:* Pandas. Попередня обробка даних" dir="auto" class="heading" id="*Заняття_15*_Pandas._Попередня_обробка_даних_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><em>Заняття 15:</em> Pandas. Попередня обробка даних</h3></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="info" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-info"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg></div><div class="callout-title-inner">Обговорена та ухвалена на засіданні кафедри інформаційних технологій та кібербезпеки 16 лютого 2026 р., протокол № 07</div></div></div></div><div class="el-h3"><h3 data-heading="Результати заняття" dir="auto" class="heading" id="Результати_заняття_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Результати заняття</h3></div><div class="el-p"><p dir="auto"><em>(слухач зможе)</em></p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Оцінювати вибірку даних на основі аналізу її значень.</li>
+<li data-line="1" dir="auto">Проводити попередню обробку</li>
+</ol></div><div class="el-p"><p dir="auto"><strong>Навчальний час</strong>: 2 години.</p></div><div class="el-p"><p dir="auto"><strong>Навчальна література:</strong></p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">The Python Tutorial [Електронний ресурс] – Режим доступу до ресурсу: <a rel="noopener nofollow" class="external-link is-unresolved" href="https://docs.python.org/3/tutorial/index.html" target="_self">https://docs.python.org/3/tutorial/index.html</a>.</li>
+<li data-line="1" dir="auto">Pandas DataFrame [Електронний ресурс] – Режим доступу до ресурсу:<a rel="noopener nofollow" class="external-link is-unresolved" href="https://pandas.pydata.org/docs/reference/frame.html" target="_self">https://pandas.pydata.org/docs/reference/frame.html</a></li>
+</ol></div><div class="el-h3"><h3 align="center" dir="auto" class="heading" id="ПЛАН_ЗАНЯТТЯ_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>ПЛАН ЗАНЯТТЯ</h3></div><div class="el-table" dir="auto" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th align="center" dir="auto">№</th>
+<th dir="ltr">Навчальні питання</th>
+<th align="center" dir="ltr">Час, хв</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" dir="auto">1</td>
+<td dir="ltr">ВСТУПНА ЧАСТИНА <br>Організаційні питання<br></td>
+<td align="center" dir="auto">5</td>
+</tr>
+<tr>
+<td align="center" dir="auto">2</td>
+<td dir="ltr">ОСНОВНА ЧАСТИНА</td>
+<td align="center" dir="auto">90</td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#1. Виявлення записів із відсутніми даними" href="sp_15__gl.html#1._Виявлення_записів_із_відсутніми_даними_0" class="internal-link" target="_self" rel="noopener nofollow">1. Виявлення записів із відсутніми даними</a></td>
+<td align="center" dir="auto">30</td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#2. Видалення записів із відсутніми значеннями чарунок" href="sp_15__gl.html#2._Видалення_записів_із_відсутніми_значеннями_чарунок_0" class="internal-link" target="_self" rel="noopener nofollow">2. Видалення записів із відсутніми значеннями чарунок</a></td>
+<td align="center" dir="auto">40</td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#3. Заповнення значень у чарунках на основі припущень" href="sp_15__gl.html#3._Заповнення_значень_у_чарунках_на_основі_припущень_0" class="internal-link" target="_self" rel="noopener nofollow">3. Заповнення значень у чарунках на основі припущень</a></td>
+<td align="center" dir="ltr">45 (на СП)</td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#4. Перевірка теоретичних знань" href="sp_15__gl.html#4._Перевірка_теоретичних_знань_0" class="internal-link" target="_self" rel="noopener nofollow">4. Перевірка теоретичних знань</a></td>
+<td align="center" dir="auto">10</td>
+</tr>
+<tr>
+<td align="center" dir="auto">3</td>
+<td dir="ltr">ЗАКЛЮЧНА ЧАСТИНА</td>
+<td align="center" dir="auto">5</td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#Порядок оцінювання" href="sp_15__gl.html#Порядок_оцінювання_0" class="internal-link" target="_self" rel="noopener nofollow">Порядок оцінювання</a></td>
+<td align="center" dir="auto"></td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#Завдання на самостійну підготовку" href="sp_15__gl.html#Завдання_на_самостійну_підготовку_0" class="internal-link" target="_self" rel="noopener nofollow">Завдання на самостійну підготовку</a></td>
+<td align="center" dir="auto"></td>
+</tr>
+<tr>
+<td align="center" dir="auto"></td>
+<td dir="ltr"><a data-href="#Питання для самоконтролю" href="sp_15__gl.html#Питання_для_самоконтролю_0" class="internal-link" target="_self" rel="noopener nofollow">Питання для самоконтролю</a></td>
+<td align="center" dir="auto"></td>
+</tr>
+</tbody>
+</table></div><div class="el-h3"><h3 align="center" dir="auto" class="heading" id="ВСТУПНА_ЧАСТИНА_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>ВСТУПНА ЧАСТИНА</strong></h3></div><div class="el-p"><p dir="auto">Організаційні питання.</p></div><div class="el-h3"><h3 align="center" dir="auto" class="heading" id="ОСНОВНА_ЧАСТИНА_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>ОСНОВНА ЧАСТИНА</strong></h3></div><div class="el-h3"><h3 data-heading="1.  Виявлення записів із відсутніми даними" dir="auto" class="heading" id="1._Виявлення_записів_із_відсутніми_даними_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>1.  Виявлення записів із відсутніми даними</h3></div><div class="el-p"><p dir="auto"><em>Теорія - 10 хв, практика - 20 хв</em></p></div><div class="el-p"><p dir="auto">Бувають випадки коли при формуванні вибірки даних, яка відображає опис реальних подій, окремі значення є відсутніми в силу будь-яких причин. Але такі обставини не мають завадити проведенню аналізу та прийняття рішення на основі отриманих даних. Оскільки ці дані можуть бути добутими надто великими зусиллями, або не можуть бути повторені. У такому випадку варіантів вирішення може бути три:</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Залишити чарунки з відсутніми значеннями як є.</li>
+<li data-line="1" dir="auto">Видалити записи із відсутніми значеннями у чарунках.</li>
+<li data-line="2" dir="auto">Заповнити відсутні значення на основі припущень.</li>
+</ol></div><div class="el-p"><p dir="auto">Розглянемо переваги та недоліки запропонованих рішень</p></div><div class="el-pre"><div class="mermaid"><svg aria-roledescription="flowchart-v2" role="graphics-document document" viewBox="0 0.000003814697265625 584.6719970703125 393.60418701171875" height="393.60418701171875" class="flowchart" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="584.6719970703125" id="m953b38d9273c3f10"><style>#m953b38d9273c3f10{font-family:var(--font-mermaid);font-size:16px;fill:#333;}#m953b38d9273c3f10 .error-icon{fill:#552222;}#m953b38d9273c3f10 .error-text{fill:#552222;stroke:#552222;}#m953b38d9273c3f10 .edge-thickness-normal{stroke-width:1px;}#m953b38d9273c3f10 .edge-thickness-thick{stroke-width:3.5px;}#m953b38d9273c3f10 .edge-pattern-solid{stroke-dasharray:0;}#m953b38d9273c3f10 .edge-thickness-invisible{stroke-width:0;fill:none;}#m953b38d9273c3f10 .edge-pattern-dashed{stroke-dasharray:3;}#m953b38d9273c3f10 .edge-pattern-dotted{stroke-dasharray:2;}#m953b38d9273c3f10 .marker{fill:#333333;stroke:#333333;}#m953b38d9273c3f10 .marker.cross{stroke:#333333;}#m953b38d9273c3f10 svg{font-family:var(--font-mermaid);font-size:16px;}#m953b38d9273c3f10 p{margin:0;}#m953b38d9273c3f10 .label{font-family:var(--font-mermaid);color:#333;}#m953b38d9273c3f10 .cluster-label text{fill:#333;}#m953b38d9273c3f10 .cluster-label span{color:#333;}#m953b38d9273c3f10 .cluster-label span p{background-color:transparent;}#m953b38d9273c3f10 .label text,#m953b38d9273c3f10 span{fill:#333;color:#333;}#m953b38d9273c3f10 .node rect,#m953b38d9273c3f10 .node circle,#m953b38d9273c3f10 .node ellipse,#m953b38d9273c3f10 .node polygon,#m953b38d9273c3f10 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#m953b38d9273c3f10 .rough-node .label text,#m953b38d9273c3f10 .node .label text,#m953b38d9273c3f10 .image-shape .label,#m953b38d9273c3f10 .icon-shape .label{text-anchor:middle;}#m953b38d9273c3f10 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#m953b38d9273c3f10 .rough-node .label,#m953b38d9273c3f10 .node .label,#m953b38d9273c3f10 .image-shape .label,#m953b38d9273c3f10 .icon-shape .label{text-align:center;}#m953b38d9273c3f10 .node.clickable{cursor:pointer;}#m953b38d9273c3f10 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#m953b38d9273c3f10 .arrowheadPath{fill:#333333;}#m953b38d9273c3f10 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#m953b38d9273c3f10 .flowchart-link{stroke:#333333;fill:none;}#m953b38d9273c3f10 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#m953b38d9273c3f10 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#m953b38d9273c3f10 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#m953b38d9273c3f10 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#m953b38d9273c3f10 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#m953b38d9273c3f10 .cluster text{fill:#333;}#m953b38d9273c3f10 .cluster span{color:#333;}#m953b38d9273c3f10 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:var(--font-mermaid);font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#m953b38d9273c3f10 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#m953b38d9273c3f10 rect.text{fill:none;stroke-width:0;}#m953b38d9273c3f10 .icon-shape,#m953b38d9273c3f10 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#m953b38d9273c3f10 .icon-shape p,#m953b38d9273c3f10 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#m953b38d9273c3f10 .icon-shape rect,#m953b38d9273c3f10 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#m953b38d9273c3f10 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#m953b38d9273c3f10 .cons&gt;*{stroke:#f00!important;}#m953b38d9273c3f10 .cons span{stroke:#f00!important;}#m953b38d9273c3f10 .pros&gt;*{stroke:#0f0!important;}#m953b38d9273c3f10 .pros span{stroke:#0f0!important;}#m953b38d9273c3f10 .list&gt;*{text-align:left!important;}#m953b38d9273c3f10 .list span{text-align:left!important;}</style><g><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="5" viewBox="0 0 10 10" class="marker flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="4.5" viewBox="0 0 10 10" class="marker flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_A_B_0" d="M193.114,96.646L183.818,100.813C174.521,104.979,155.929,113.313,146.703,121.063C137.476,128.813,137.617,135.98,137.687,139.563L137.758,143.147"></path><path marker-end="url(#m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_1" d="M137.836,186.139L137.753,190.222C137.669,194.306,137.503,202.472,137.419,216.054C137.336,229.635,137.336,248.632,137.336,258.13L137.336,267.628"></path><path marker-end="url(#m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_A_E_2" d="M390.894,96.646L400.19,100.813C409.487,104.979,428.079,113.313,437.446,121.063C446.812,128.813,446.953,135.98,447.023,139.563L447.094,143.147"></path><path marker-end="url(#m953b38d9273c3f10-m953b38d9273c3f10_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_F_3" d="M447.172,186.139L447.089,190.222C447.005,194.306,446.839,202.472,446.755,210.056C446.672,217.639,446.672,224.639,446.672,228.139L446.672,231.639"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(292.0039367675781, 52.32291793823242)" id="flowchart-A-56" class="node default"><rect height="88.64583587646484" width="237.16148948669434" y="-44.32291793823242" x="-118.58074474334717" ry="44.32291793823242" rx="44.32291793823242" style="" class="basic label-container"></rect><g transform="translate(-100.00001525878906, -36.82291793823242)" style="" class="label"><rect></rect><foreignObject height="73.64583587646484" width="200.00003051757812"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p><strong>Залишити чарунки з відсутніми значеннями як є</strong></p></span></div></foreignObject></g></g><g transform="translate(137.33595275878906, 166.14236450195312)" id="flowchart-B-57" class="node default pros"><g transform="translate(4.87413215637207,0)" class="basic label-container"><path style="stroke:#0f0 !important" fill="#ECECFF" stroke-width="0" stroke="none" d="M-52.044273376464844 -19.49652862548828 C-49.6437670107249 -14.695515894008395, -47.24326064498496 -9.894503162528506, -42.2960090637207 0 C-44.52714781327353 4.462277499105658, -46.75828656282636 8.924554998211317, -52.044273376464844 19.49652862548828 C-28.95226509909483 19.49652862548828, -5.860256821724818 19.49652862548828, 42.2960090637207 19.49652862548828 C42.2960090637207 5.436950032905573, 42.2960090637207 -8.622628559677135, 42.2960090637207 -19.49652862548828 C5.3592311103239965 -19.49652862548828, -31.57754684307271 -19.49652862548828, -52.044273376464844 -19.49652862548828"></path><path style="stroke:#0f0 !important" fill="none" stroke-width="1.3" stroke="#0f0" d="M-52.044273376464844 -19.49652862548828 C-48.33898368547022 -12.08594924349903, -44.63369399447559 -4.675369861509781, -42.2960090637207 0 M-52.044273376464844 -19.49652862548828 C-49.547534996379696 -14.503051865317987, -47.05079661629455 -9.509575105147693, -42.2960090637207 0 M-42.2960090637207 0 C-44.65031143820659 4.7086047489717755, -47.004613812692476 9.417209497943551, -52.044273376464844 19.49652862548828 M-42.2960090637207 0 C-44.298666975985306 4.005315824529204, -46.30132488824991 8.010631649058409, -52.044273376464844 19.49652862548828 M-52.044273376464844 19.49652862548828 C-18.217745161155285 19.49652862548828, 15.608783054154273 19.49652862548828, 42.2960090637207 19.49652862548828 M-52.044273376464844 19.49652862548828 C-22.958024839962015 19.49652862548828, 6.128223696540815 19.49652862548828, 42.2960090637207 19.49652862548828 M42.2960090637207 19.49652862548828 C42.2960090637207 10.199463844042501, 42.2960090637207 0.9023990625967215, 42.2960090637207 -19.49652862548828 M42.2960090637207 19.49652862548828 C42.2960090637207 6.353376703764278, 42.2960090637207 -6.7897752179597255, 42.2960090637207 -19.49652862548828 M42.2960090637207 -19.49652862548828 C10.277222112147378 -19.49652862548828, -21.741564839425948 -19.49652862548828, -52.044273376464844 -19.49652862548828 M42.2960090637207 -19.49652862548828 C4.9949998365799075 -19.49652862548828, -32.30600939056089 -19.49652862548828, -52.044273376464844 -19.49652862548828"></path></g><g transform="translate(-29.921876907348633, -11.996528625488281)" style="" class="label"><rect></rect><foreignObject height="23.993057250976562" width="69.5920181274414"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>Переваги</p></span></div></foreignObject></g></g><g transform="translate(137.33595275878906, 310.6215362548828)" id="flowchart-C-59" class="node default list"><rect height="77.98611450195312" width="258.6719055175781" y="-38.99305725097656" x="-129.33595275878906" style="" class="basic label-container"></rect><g transform="translate(-99.33595275878906, -23.993057250976562)" style="text-align:left !important" class="label"><rect></rect><foreignObject height="47.986114501953125" width="198.67190551757812"><div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px;"><span class="nodeLabel" style="text-align:left !important"><p>-найбільш простий варіант<br>-не вносяться зміни у дані</p></span></div></foreignObject></g></g><g transform="translate(446.6719207763672, 166.14236450195312)" id="flowchart-E-61" class="node default cons"><g transform="translate(4.87413215637207,0)" class="basic label-container"><path style="stroke:#f00 !important" fill="#ECECFF" stroke-width="0" stroke="none" d="M-50.954864501953125 -19.49652862548828 C-47.18181022092364 -11.950420063429311, -43.40875593989416 -4.404311501370341, -41.206600189208984 0 C-43.61216059331807 4.811120808218184, -46.01772099742717 9.622241616436368, -50.954864501953125 19.49652862548828 C-31.6011328914223 19.49652862548828, -12.247401280891474 19.49652862548828, 41.206600189208984 19.49652862548828 C41.206600189208984 4.044163281561001, 41.206600189208984 -11.408202062366279, 41.206600189208984 -19.49652862548828 C11.646268929886848 -19.49652862548828, -17.91406232943529 -19.49652862548828, -50.954864501953125 -19.49652862548828"></path><path style="stroke:#f00 !important" fill="none" stroke-width="1.3" stroke="#f00" d="M-50.954864501953125 -19.49652862548828 C-47.790860225432034 -13.168520072446096, -44.62685594891094 -6.840511519403911, -41.206600189208984 0 M-50.954864501953125 -19.49652862548828 C-47.68316215623716 -12.953123934056343, -44.41145981052119 -6.409719242624407, -41.206600189208984 0 M-41.206600189208984 0 C-44.174410551866885 5.935620725315798, -47.142220914524785 11.871241450631596, -50.954864501953125 19.49652862548828 M-41.206600189208984 0 C-44.586888998285794 6.760577618153624, -47.96717780736261 13.521155236307248, -50.954864501953125 19.49652862548828 M-50.954864501953125 19.49652862548828 C-29.309739954066895 19.49652862548828, -7.6646154061806655 19.49652862548828, 41.206600189208984 19.49652862548828 M-50.954864501953125 19.49652862548828 C-27.92068537409695 19.49652862548828, -4.886506246240778 19.49652862548828, 41.206600189208984 19.49652862548828 M41.206600189208984 19.49652862548828 C41.206600189208984 9.136789560712526, 41.206600189208984 -1.22294950406323, 41.206600189208984 -19.49652862548828 M41.206600189208984 19.49652862548828 C41.206600189208984 7.688317998340798, 41.206600189208984 -4.119892628806685, 41.206600189208984 -19.49652862548828 M41.206600189208984 -19.49652862548828 C17.424525857737837 -19.49652862548828, -6.35754847373331 -19.49652862548828, -50.954864501953125 -19.49652862548828 M41.206600189208984 -19.49652862548828 C19.51579365551487 -19.49652862548828, -2.1750128781792455 -19.49652862548828, -50.954864501953125 -19.49652862548828"></path></g><g transform="translate(-28.832468032836914, -11.996528625488281)" style="" class="label"><rect></rect><foreignObject height="23.993057250976562" width="67.41320037841797"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>Недоліки</p></span></div></foreignObject></g></g><g transform="translate(446.6719207763672, 310.6215362548828)" id="flowchart-F-63" class="node default list"><rect height="149.9652862548828" width="260.0000305175781" y="-74.9826431274414" x="-130.00001525878906" style="" class="basic label-container"></rect><g transform="translate(-100.00001525878906, -59.982643127441406)" style="text-align:left !important" class="label"><rect></rect><foreignObject height="119.96528625488281" width="200.00003051757812"><div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; width: 200px;"><span class="nodeLabel" style="text-align:left !important"><p>-не усі бібліотеки можуть працювати із пропущеними даними<br>-є варіанти аргументованої заміни</p></span></div></foreignObject></g></g></g></g></g></svg></div></div><div class="el-p"><p align="center" dir="auto">Рис. 1.</p>
+```mermaid
+flowchart TD
+A(["`**Видалити записи із відсутніми значеннями у чарунках**`"]) --&gt; B&gt;Переваги]:::pros;
+B --&gt; C[-простий варіант<br>-можливо реалізувати на основі умов]:::list;
+A --&gt; E&gt;Недоліки]:::cons;
+E --&gt; F[-втрата корисної інформації<br>-не придатні для варіантів заповнення у майбутньому ]:::list;
+classDef cons stroke:#f00
+classDef pros stroke:#0f0
+classDef list text-align:left
+```</div><div class="el-p"><p align="center" dir="auto">Рис. 2.</p></div><div class="el-pre"><div class="mermaid"><svg aria-roledescription="flowchart-v2" role="graphics-document document" viewBox="0 0.000003814697265625 572.3108520507812 321.625" height="321.625" class="flowchart" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="572.3108520507812" id="m36e3e54d80385e09"><style>#m36e3e54d80385e09{font-family:var(--font-mermaid);font-size:16px;fill:#333;}#m36e3e54d80385e09 .error-icon{fill:#552222;}#m36e3e54d80385e09 .error-text{fill:#552222;stroke:#552222;}#m36e3e54d80385e09 .edge-thickness-normal{stroke-width:1px;}#m36e3e54d80385e09 .edge-thickness-thick{stroke-width:3.5px;}#m36e3e54d80385e09 .edge-pattern-solid{stroke-dasharray:0;}#m36e3e54d80385e09 .edge-thickness-invisible{stroke-width:0;fill:none;}#m36e3e54d80385e09 .edge-pattern-dashed{stroke-dasharray:3;}#m36e3e54d80385e09 .edge-pattern-dotted{stroke-dasharray:2;}#m36e3e54d80385e09 .marker{fill:#333333;stroke:#333333;}#m36e3e54d80385e09 .marker.cross{stroke:#333333;}#m36e3e54d80385e09 svg{font-family:var(--font-mermaid);font-size:16px;}#m36e3e54d80385e09 p{margin:0;}#m36e3e54d80385e09 .label{font-family:var(--font-mermaid);color:#333;}#m36e3e54d80385e09 .cluster-label text{fill:#333;}#m36e3e54d80385e09 .cluster-label span{color:#333;}#m36e3e54d80385e09 .cluster-label span p{background-color:transparent;}#m36e3e54d80385e09 .label text,#m36e3e54d80385e09 span{fill:#333;color:#333;}#m36e3e54d80385e09 .node rect,#m36e3e54d80385e09 .node circle,#m36e3e54d80385e09 .node ellipse,#m36e3e54d80385e09 .node polygon,#m36e3e54d80385e09 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#m36e3e54d80385e09 .rough-node .label text,#m36e3e54d80385e09 .node .label text,#m36e3e54d80385e09 .image-shape .label,#m36e3e54d80385e09 .icon-shape .label{text-anchor:middle;}#m36e3e54d80385e09 .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#m36e3e54d80385e09 .rough-node .label,#m36e3e54d80385e09 .node .label,#m36e3e54d80385e09 .image-shape .label,#m36e3e54d80385e09 .icon-shape .label{text-align:center;}#m36e3e54d80385e09 .node.clickable{cursor:pointer;}#m36e3e54d80385e09 .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#m36e3e54d80385e09 .arrowheadPath{fill:#333333;}#m36e3e54d80385e09 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#m36e3e54d80385e09 .flowchart-link{stroke:#333333;fill:none;}#m36e3e54d80385e09 .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#m36e3e54d80385e09 .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#m36e3e54d80385e09 .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#m36e3e54d80385e09 .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#m36e3e54d80385e09 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#m36e3e54d80385e09 .cluster text{fill:#333;}#m36e3e54d80385e09 .cluster span{color:#333;}#m36e3e54d80385e09 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:var(--font-mermaid);font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#m36e3e54d80385e09 .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#m36e3e54d80385e09 rect.text{fill:none;stroke-width:0;}#m36e3e54d80385e09 .icon-shape,#m36e3e54d80385e09 .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#m36e3e54d80385e09 .icon-shape p,#m36e3e54d80385e09 .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#m36e3e54d80385e09 .icon-shape rect,#m36e3e54d80385e09 .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#m36e3e54d80385e09 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#m36e3e54d80385e09 .cons&gt;*{stroke:#f00!important;}#m36e3e54d80385e09 .cons span{stroke:#f00!important;}#m36e3e54d80385e09 .pros&gt;*{stroke:#0f0!important;}#m36e3e54d80385e09 .pros span{stroke:#0f0!important;}#m36e3e54d80385e09 .list&gt;*{text-align:left!important;}#m36e3e54d80385e09 .list span{text-align:left!important;}</style><g><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="5" viewBox="0 0 10 10" class="marker flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointEnd"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 0 L 10 5 L 0 10 z"></path></marker><marker orient="auto" markerHeight="8" markerWidth="8" markerUnits="userSpaceOnUse" refY="5" refX="4.5" viewBox="0 0 10 10" class="marker flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointStart"><path style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 0 5 L 10 10 L 10 0 z"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="11" viewBox="0 0 10 10" class="marker flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-circleEnd"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5" refX="-1" viewBox="0 0 10 10" class="marker flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-circleStart"><circle style="stroke-width: 1; stroke-dasharray: 1, 0;" class="arrowMarkerPath" r="5" cy="5" cx="5"></circle></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="12" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-crossEnd"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><marker orient="auto" markerHeight="11" markerWidth="11" markerUnits="userSpaceOnUse" refY="5.2" refX="-1" viewBox="0 0 11 11" class="marker cross flowchart-v2" id="m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-crossStart"><path style="stroke-width: 2; stroke-dasharray: 1, 0;" class="arrowMarkerPath" d="M 1,1 l 9,9 M 10,1 l -9,9"></path></marker><g class="root"><g class="clusters"></g><g class="edgePaths"><path marker-end="url(#m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_A_B_0" d="M192.664,96.646L183.553,100.813C174.442,104.979,156.221,113.313,147.181,121.063C138.141,128.813,138.281,135.98,138.351,139.563L138.422,143.147"></path><path marker-end="url(#m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_B_C_1" d="M138.5,186.139L138.417,190.222C138.333,194.306,138.167,202.472,138.083,210.056C138,217.639,138,224.639,138,228.139L138,231.639"></path><path marker-end="url(#m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_A_E_2" d="M386.492,96.646L395.602,100.813C404.713,104.979,422.934,113.313,432.115,121.063C441.296,128.813,441.436,135.98,441.507,139.563L441.577,143.147"></path><path marker-end="url(#m36e3e54d80385e09-m36e3e54d80385e09_flowchart-v2-pointEnd)" style="" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" id="L_E_F_3" d="M441.655,186.139L441.572,190.222C441.489,194.306,441.322,202.472,441.239,210.056C441.155,217.639,441.155,224.639,441.155,228.139L441.155,231.639"></path></g><g class="edgeLabels"><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g transform="translate(0, 0)" class="label"><foreignObject height="0" width="0"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" class="labelBkg" xmlns="http://www.w3.org/1999/xhtml"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g transform="translate(289.5777168273926, 52.32291793823242)" id="flowchart-A-64" class="node default"><rect height="88.64583587646484" width="237.16148948669434" y="-44.32291793823242" x="-118.58074474334717" ry="44.32291793823242" rx="44.32291793823242" style="" class="basic label-container"></rect><g transform="translate(-100.00001525878906, -36.82291793823242)" style="" class="label"><rect></rect><foreignObject height="73.64583587646484" width="200.00003051757812"><div style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p><strong>Заповнити пропущені значення на основі припущень</strong></p></span></div></foreignObject></g></g><g transform="translate(138.00001525878906, 166.14236450195312)" id="flowchart-B-65" class="node default pros"><g transform="translate(4.87413215637207,0)" class="basic label-container"><path style="stroke:#0f0 !important" fill="#ECECFF" stroke-width="0" stroke="none" d="M-52.044273376464844 -19.49652862548828 C-48.638326232518395 -12.68463433759538, -45.23237908857194 -5.872740049702477, -42.2960090637207 0 C-45.4763120749232 6.360606022404992, -48.6566150861257 12.721212044809985, -52.044273376464844 19.49652862548828 C-32.74873075206375 19.49652862548828, -13.453188127662663 19.49652862548828, 42.2960090637207 19.49652862548828 C42.2960090637207 4.5097700376892575, 42.2960090637207 -10.476988550109766, 42.2960090637207 -19.49652862548828 C20.390444400998277 -19.49652862548828, -1.5151202617241495 -19.49652862548828, -52.044273376464844 -19.49652862548828"></path><path style="stroke:#0f0 !important" fill="none" stroke-width="1.3" stroke="#0f0" d="M-52.044273376464844 -19.49652862548828 C-48.658669966953795 -12.72532180646618, -45.273066557442746 -5.954114987444079, -42.2960090637207 0 M-52.044273376464844 -19.49652862548828 C-49.71566383589776 -14.839309544354112, -47.38705429533067 -10.182090463219943, -42.2960090637207 0 M-42.2960090637207 0 C-46.119776694193334 7.647535260945264, -49.943544324665964 15.295070521890528, -52.044273376464844 19.49652862548828 M-42.2960090637207 0 C-44.71205630661943 4.832094485797462, -47.128103549518165 9.664188971594925, -52.044273376464844 19.49652862548828 M-52.044273376464844 19.49652862548828 C-26.852132051515106 19.49652862548828, -1.6599907265653684 19.49652862548828, 42.2960090637207 19.49652862548828 M-52.044273376464844 19.49652862548828 C-21.96593088534944 19.49652862548828, 8.112411605765963 19.49652862548828, 42.2960090637207 19.49652862548828 M42.2960090637207 19.49652862548828 C42.2960090637207 11.043386502064605, 42.2960090637207 2.5902443786409286, 42.2960090637207 -19.49652862548828 M42.2960090637207 19.49652862548828 C42.2960090637207 6.670180129487562, 42.2960090637207 -6.156168366513157, 42.2960090637207 -19.49652862548828 M42.2960090637207 -19.49652862548828 C9.63034853323363 -19.49652862548828, -23.035311997253444 -19.49652862548828, -52.044273376464844 -19.49652862548828 M42.2960090637207 -19.49652862548828 C10.422585810928577 -19.49652862548828, -21.45083744186355 -19.49652862548828, -52.044273376464844 -19.49652862548828"></path></g><g transform="translate(-29.921876907348633, -11.996528625488281)" style="" class="label"><rect></rect><foreignObject height="23.993057250976562" width="69.5920181274414"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>Переваги</p></span></div></foreignObject></g></g><g transform="translate(138.00001525878906, 274.63195037841797)" id="flowchart-C-67" class="node default list"><rect height="77.98611450195312" width="260.0000305175781" y="-38.99305725097656" x="-130.00001525878906" style="" class="basic label-container"></rect><g transform="translate(-100.00001525878906, -23.993057250976562)" style="text-align:left !important" class="label"><rect></rect><foreignObject height="47.986114501953125" width="200.00003051757812"><div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; width: 200px;"><span class="nodeLabel" style="text-align:left !important"><p>зберігаються і використовуються усі дані</p></span></div></foreignObject></g></g><g transform="translate(441.1554183959961, 166.14236450195312)" id="flowchart-E-69" class="node default cons"><g transform="translate(4.87413215637207,0)" class="basic label-container"><path style="stroke:#f00 !important" fill="#ECECFF" stroke-width="0" stroke="none" d="M-50.954864501953125 -19.49652862548828 C-47.335818100498166 -12.258435822578363, -43.71677169904321 -5.020343019668445, -41.206600189208984 0 C-44.92310827432384 7.433016170229699, -48.63961635943868 14.866032340459398, -50.954864501953125 19.49652862548828 C-22.573899117411244 19.49652862548828, 5.807066267130637 19.49652862548828, 41.206600189208984 19.49652862548828 C41.206600189208984 9.82952548778812, 41.206600189208984 0.1625223500879578, 41.206600189208984 -19.49652862548828 C21.81648427793961 -19.49652862548828, 2.426368366670239 -19.49652862548828, -50.954864501953125 -19.49652862548828"></path><path style="stroke:#f00 !important" fill="none" stroke-width="1.3" stroke="#f00" d="M-50.954864501953125 -19.49652862548828 C-47.93153525440785 -13.449870130397727, -44.90820600686257 -7.403211635307171, -41.206600189208984 0 M-50.954864501953125 -19.49652862548828 C-47.378922852896544 -12.34464532737512, -43.80298120383996 -5.19276202926196, -41.206600189208984 0 M-41.206600189208984 0 C-43.16625010824575 3.9192998380735338, -45.12590002728252 7.8385996761470675, -50.954864501953125 19.49652862548828 M-41.206600189208984 0 C-44.80982082070727 7.2064412629965755, -48.41304145220556 14.412882525993151, -50.954864501953125 19.49652862548828 M-50.954864501953125 19.49652862548828 C-22.78470825597016 19.49652862548828, 5.385447990012807 19.49652862548828, 41.206600189208984 19.49652862548828 M-50.954864501953125 19.49652862548828 C-23.38684766570846 19.49652862548828, 4.181169170536208 19.49652862548828, 41.206600189208984 19.49652862548828 M41.206600189208984 19.49652862548828 C41.206600189208984 10.91652430280627, 41.206600189208984 2.336519980124258, 41.206600189208984 -19.49652862548828 M41.206600189208984 19.49652862548828 C41.206600189208984 7.713515980348403, 41.206600189208984 -4.069496664791476, 41.206600189208984 -19.49652862548828 M41.206600189208984 -19.49652862548828 C11.186659902117935 -19.49652862548828, -18.833280384973115 -19.49652862548828, -50.954864501953125 -19.49652862548828 M41.206600189208984 -19.49652862548828 C5.9764092345612525 -19.49652862548828, -29.25378172008648 -19.49652862548828, -50.954864501953125 -19.49652862548828"></path></g><g transform="translate(-28.832468032836914, -11.996528625488281)" style="" class="label"><rect></rect><foreignObject height="23.993057250976562" width="67.41320037841797"><div style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span class="nodeLabel"><p>Недоліки</p></span></div></foreignObject></g></g><g transform="translate(441.1554183959961, 274.63195037841797)" id="flowchart-F-71" class="node default list"><rect height="77.98611450195312" width="246.31077575683594" y="-38.99305725097656" x="-123.15538787841797" style="" class="basic label-container"></rect><g transform="translate(-93.15538787841797, -23.993057250976562)" style="text-align:left !important" class="label"><rect></rect><foreignObject height="47.986114501953125" width="186.31077575683594"><div xmlns="http://www.w3.org/1999/xhtml" style="text-align: center; display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px;"><span class="nodeLabel" style="text-align:left !important"><p>-складно у реалізації<br>-можливі хибні висновки</p></span></div></foreignObject></g></g></g></g></g></svg></div></div><div class="el-p"><p align="center" dir="auto">Рис. 3.</p></div><div class="el-p"><p dir="auto">Розглянемо приклад коли можна заповнити пропущені значення.</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Country</th>
+<th dir="ltr">Population</th>
+<th dir="ltr">GDP &nbsp;</th>
+<th dir="ltr">Carriers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">USA &nbsp; &nbsp;</td>
+<td dir="auto">328 &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td dir="auto">20.5</td>
+<td dir="auto">11 &nbsp; &nbsp; &nbsp;</td>
+</tr>
+<tr>
+<td dir="ltr">Canada &nbsp;</td>
+<td dir="auto">38 &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td dir="auto">1.7 &nbsp;</td>
+<td dir="ltr">NaN &nbsp; &nbsp; &nbsp;</td>
+</tr>
+<tr>
+<td dir="ltr">Mexico &nbsp;</td>
+<td dir="auto">126 &nbsp; &nbsp; &nbsp; &nbsp;</td>
+<td dir="auto">1.22</td>
+<td dir="ltr">NaN &nbsp; &nbsp; &nbsp;</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Тут наведені статистичні дані по країнам. І останній стовпець містить кількість авіаносців. Оскільки відомо, що у Канади та Мексики немає авіаносців, значення <code>NaN</code> можна заповнити нулями.</p></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="tip" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame"><path d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4"></path></svg></div><div class="callout-title-inner">При вибірці даних у якій фігурують стовпці з числовими даними відсутні значення будуть відображатися як <code>NaN</code>.</div></div></div></div><div class="el-p"><p dir="auto">Розглянемо як на практиці застосовуються пропуски у даних. Відсутні дані заповнюються відповідним значенням із бібліотеки <code>numpy</code></p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+
+np<span class="token punctuation">.</span>nan
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="warning" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner">Важливо пам'ятати, що при побудові висловлювань значення <code>np.nan</code> не можна порівнювати між собою логічними операторами, оскільки це приведе до неправильного висновку</div></div></div></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">np<span class="token punctuation">.</span>nan <span class="token operator">==</span> np<span class="token punctuation">.</span>nan
+
+<span class="token comment"># False</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded"><span class="token comment"># Для порівняння використовують наступну конструкцію</span>
+
+value <span class="token operator">=</span> np<span class="token punctuation">.</span>nan
+value <span class="token keyword">is</span> np<span class="token punctuation">.</span>nan
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'./data/movie_scores.csv'</span><span class="token punctuation">)</span>
+df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Вивід результату</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">Hugh</td>
+<td dir="ltr">Jackman</td>
+<td dir="auto">51.0</td>
+<td dir="ltr">m</td>
+<td dir="ltr">NaN</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Щоб перевірити отриману вибірку даних де є не заповнені значення використовується наступний метод <code>.isnull()</code>і навпаки <code>.notnull()</code></p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>isnull<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Вивід результату</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">True</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Або протилежний запит</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>notnull<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Вивід результату</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+<td dir="ltr">False</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">False</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+<td dir="ltr">True</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">На основі таких методів є можливість проводити фільтрування даних. Щоб отримати акторів, для яких є усі дані, запишемо</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">[</span><span class="token string">'post_movie_score'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>notnull<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-bash"><code data-line="0" class="language-bash is-loaded"><span class="token number">0</span> True 
+<span class="token number">1</span> False 
+<span class="token number">2</span> False 
+<span class="token number">3</span> True 
+<span class="token number">4</span> True 
+Name: post_movie_score, dtype: bool
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">[</span>df<span class="token punctuation">[</span><span class="token string">'post_movie_score'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>notnull<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Вивід результату:</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-h4"><h4 data-heading="🧠Практичне завдання 1" dir="auto" class="heading" id="🧠Практичне_завдання_1_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>🧠Практичне завдання 1</h4></div><div class="el-blockquote"><blockquote dir="auto">
+<p>На основі даних про акторів знайти усі записи (рядки даних), для яких:</p>
+<ol>
+<li data-line="1" dir="auto">стовпець <code>pre_movie_score</code> не має числового значення;</li>
+<li data-line="2" dir="auto">стовпець <code>pre_movie_score</code> не має числового значення, а стовпець <code>age</code> - має.</li>
+</ol>
+<p>TechStack: python;pandas;<br>
+Макс. бал: 0.4 / Час, хв: 20</p>
+</blockquote></div><div class="el-h3"><h3 data-heading="2. Видалення записів із відсутніми значеннями чарунок" dir="auto" class="heading" id="2._Видалення_записів_із_відсутніми_значеннями_чарунок_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>2. Видалення записів із відсутніми значеннями чарунок</h3></div><div class="el-p"><p dir="auto"><em>Теорія - 10 хв, практика - 0 хв</em></p></div><div class="el-p"><p dir="auto">Розглянемо способи реалізації підходів до роботи з відсутніми даними. Залишити як є - варіант будемо вважати розглянутим.</p></div><div class="el-p"><p dir="auto">Другий підхід видалити записи з відсутніми даними. Для цього використовується метод <code>.dropna()</code></p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded"><span class="token builtin">help</span><span class="token punctuation">(</span>df<span class="token punctuation">.</span>dropna<span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-bash"><code data-line="0" class="language-bash is-loaded">Help on method dropna <span class="token keyword">in</span> module pandas.core.frame:
+dropna<span class="token punctuation">(</span>
+    *,
+    axis: <span class="token string">'Axis'</span> <span class="token operator">=</span> <span class="token number">0</span>,
+    how: <span class="token string">'AnyAll | lib.NoDefault'</span> <span class="token operator">=</span> <span class="token operator">&lt;</span>no_default<span class="token operator">&gt;</span>,
+    thresh: <span class="token string">'int | lib.NoDefault'</span> <span class="token operator">=</span> <span class="token operator">&lt;</span>no_default<span class="token operator">&gt;</span>,
+    subset: <span class="token string">'IndexLabel | None'</span> <span class="token operator">=</span> None,
+    inplace: <span class="token string">'bool'</span> <span class="token operator">=</span> False,
+    ignore_index: <span class="token string">'bool'</span> <span class="token operator">=</span> False
+<span class="token punctuation">)</span> -<span class="token operator">&gt;</span> <span class="token string">'DataFrame | None'</span> method of pandas.core.frame.DataFrame instance
+    Remove missing values.
+    See the :ref:<span class="token variable"><span class="token variable">`</span>User Guide <span class="token operator">&lt;</span>missing_data<span class="token operator">&gt;</span><span class="token variable">`</span></span> <span class="token keyword">for</span> <span class="token function">more</span> on <span class="token function">which</span> values are
+    considered missing, and how to work with missing data.
+    Parameters
+    ----------
+    axis <span class="token builtin class-name">:</span> <span class="token punctuation">{</span><span class="token number">0</span> or <span class="token string">'index'</span>, <span class="token number">1</span> or <span class="token string">'columns'</span><span class="token punctuation">}</span>, default <span class="token number">0</span>
+        Determine <span class="token keyword">if</span> rows or columns <span class="token function">which</span> contain missing values are
+        removed.
+        * <span class="token number">0</span>, or <span class="token string">'index'</span> <span class="token builtin class-name">:</span> Drop rows <span class="token function">which</span> contain missing values.
+        * <span class="token number">1</span>, or <span class="token string">'columns'</span> <span class="token builtin class-name">:</span> Drop columns <span class="token function">which</span> contain missing value.
+        Only a single axis is allowed.
+    how <span class="token builtin class-name">:</span> <span class="token punctuation">{</span><span class="token string">'any'</span>, <span class="token string">'all'</span><span class="token punctuation">}</span>, default <span class="token string">'any'</span>
+        Determine <span class="token keyword">if</span> row or <span class="token function">column</span> is removed from DataFrame, when we have
+        at least one NA or all NA.
+        * <span class="token string">'any'</span> <span class="token builtin class-name">:</span> If any NA values are present, drop that row or column.
+        * <span class="token string">'all'</span> <span class="token builtin class-name">:</span> If all values are NA, drop that row or column.
+    thresh <span class="token builtin class-name">:</span> int, optional
+        Require that many non-NA values. Cannot be combined with how.
+    subset <span class="token builtin class-name">:</span> <span class="token function">column</span> label or sequence of labels, optional
+        Labels along other axis to consider, e.g. <span class="token keyword">if</span> you are dropping rows
+        these would be a list of columns to include.
+    inplace <span class="token builtin class-name">:</span> bool, default False
+        Whether to modify the DataFrame rather than creating a new one.
+    ignore_index <span class="token builtin class-name">:</span> bool, default `<span class="token variable"><span class="token variable">`</span>False<span class="token variable">`</span></span><span class="token variable"><span class="token variable">`</span>
+        If <span class="token variable">`</span></span><span class="token variable"><span class="token variable">`</span>True<span class="token variable">`</span></span><span class="token variable"><span class="token variable">`</span>, the resulting axis will be labeled <span class="token number">0</span>, <span class="token number">1</span>, …, n - <span class="token number">1</span>.
+        <span class="token punctuation">..</span> versionadded:: <span class="token number">2.0</span>.0
+    Returns
+    -------
+    DataFrame or None
+        DataFrame with NA entries dropped from it or None <span class="token keyword">if</span> <span class="token variable">`</span></span><span class="token variable"><span class="token variable">`</span><span class="token assign-left variable">inplace</span><span class="token operator">=</span>True<span class="token variable">`</span></span>`.
+    See Also
+    --------
+    DataFrame.isna: Indicate missing values.
+    DataFrame.notna <span class="token builtin class-name">:</span> Indicate existing <span class="token punctuation">(</span>non-missing<span class="token punctuation">)</span> values.
+    DataFrame.fillna <span class="token builtin class-name">:</span> Replace missing values.
+    Series.dropna <span class="token builtin class-name">:</span> Drop missing values.
+    Index.dropna <span class="token builtin class-name">:</span> Drop missing indices.
+    Examples
+    --------
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token function">df</span> <span class="token operator">=</span> pd.DataFrame<span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span><span class="token string">'Alfred'</span>, <span class="token string">'Batman'</span>, <span class="token string">'Catwoman'</span><span class="token punctuation">]</span>,
+    <span class="token punctuation">..</span>.                    <span class="token string">"toy"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>np.nan, <span class="token string">'Batmobile'</span>, <span class="token string">'Bullwhip'</span><span class="token punctuation">]</span>,
+    <span class="token punctuation">..</span>.                    <span class="token string">"born"</span><span class="token builtin class-name">:</span> <span class="token punctuation">[</span>pd.NaT, pd.Timestamp<span class="token punctuation">(</span><span class="token string">"1940-04-25"</span><span class="token punctuation">)</span>,
+    <span class="token punctuation">..</span>.                             pd.NaT<span class="token punctuation">]</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> <span class="token function">df</span>
+           name        toy       born
+    <span class="token number">0</span>    Alfred        NaN        NaT
+    <span class="token number">1</span>    Batman  Batmobile <span class="token number">1940</span>-04-25
+    <span class="token number">2</span>  Catwoman   Bullwhip        NaT
+    Drop the rows where at least one element is missing.
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df.dropna<span class="token punctuation">(</span><span class="token punctuation">)</span>
+         name        toy       born
+    <span class="token number">1</span>  Batman  Batmobile <span class="token number">1940</span>-04-25
+    Drop the columns where at least one element is missing.
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df.dropna<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token string">'columns'</span><span class="token punctuation">)</span>
+           name
+    <span class="token number">0</span>    Alfred
+    <span class="token number">1</span>    Batman
+    <span class="token number">2</span>  Catwoman
+    Drop the rows where all elements are missing.
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df.dropna<span class="token punctuation">(</span>how<span class="token operator">=</span><span class="token string">'all'</span><span class="token punctuation">)</span>
+           name        toy       born
+    <span class="token number">0</span>    Alfred        NaN        NaT
+    <span class="token number">1</span>    Batman  Batmobile <span class="token number">1940</span>-04-25
+    <span class="token number">2</span>  Catwoman   Bullwhip        NaT
+    Keep only the rows with at least <span class="token number">2</span> non-NA values.
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df.dropna<span class="token punctuation">(</span>thresh<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+           name        toy       born
+    <span class="token number">1</span>    Batman  Batmobile <span class="token number">1940</span>-04-25
+    <span class="token number">2</span>  Catwoman   Bullwhip        NaT
+    Define <span class="token keyword">in</span> <span class="token function">which</span> columns to <span class="token function">look</span> <span class="token keyword">for</span> missing values.
+    <span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> df.dropna<span class="token punctuation">(</span>subset<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'name'</span>, <span class="token string">'toy'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+           name        toy       born
+    <span class="token number">1</span>    Batman  Batmobile <span class="token number">1940</span>-04-25
+    <span class="token number">2</span>  Catwoman   Bullwhip        NaT
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+<th dir="auto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+<td dir="auto">10.0</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+<td dir="auto">9.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">За замовчуванняям даний метод видаляє усі рядки у яких є не заповнені значення. Щоб змінити такий порядок дій можна використати аргумент <code>tresh</code>, у якого числове значення рівне допустимій найменшій кількості значимих чарунок в рядку</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>thresh<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">Hugh</td>
+<td dir="ltr">Jackman</td>
+<td dir="auto">51.0</td>
+<td dir="ltr">m</td>
+<td dir="ltr">NaN</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Так при значенні 4 Hugh Jackman попадає у таку вибірку, а при значенні 5 уже ні.</p></div><div class="el-p"><p dir="auto">Можна уточнити стовпці які мають перевірятися для видалення, для цього використовують аргумент <code>subset</code>, де вказується стовпці по яким потрібно здійснювати перевірку</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>subset<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'first_name'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">Hugh</td>
+<td dir="ltr">Jackman</td>
+<td dir="auto">51.0</td>
+<td dir="ltr">m</td>
+<td dir="ltr">NaN</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Є ще варіант застосування методу для видалення стовпців, але такий варіант використовується дуже рідко. Оскільки видалення однієї ознаки із вибірки це має бути достатньо обґрунтованим рішенням. Для цього застосовується аргумент функції <code>axis</code> зі значенням 1</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>dropna<span class="token punctuation">(</span>axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> thresh<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+<td dir="ltr">NaN</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">Hugh</td>
+<td dir="ltr">Jackman</td>
+<td dir="auto">51.0</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-h4"><h4 data-heading="🧠Практичне завдання 2" dir="auto" class="heading" id="🧠Практичне_завдання_2_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>🧠Практичне завдання 2</h4></div><div class="el-blockquote"><blockquote dir="auto">
+<p>На основі наданого набору даних (наприклад, <code>movie_scores.csv</code> або власного DataFrame):</p>
+<ol>
+<li data-line="1" dir="auto">Видалити усі рядки, у яких хоча б одне значення є пропущеним.</li>
+<li data-line="2" dir="auto">Видалити усі стовпці, у яких кількість заповнених значень менша за 4.</li>
+<li data-line="3" dir="auto">Видалити рядки, у яких пропущені значення є лише у стовпці <code>pre_movie_score</code>.</li>
+<li data-line="4" dir="auto">Пояснити (записати текстом), у яких випадках доцільно видаляти рядки, а у яких — стовпці з пропущеними значеннями.</li>
+</ol>
+<p>TechStack: python;pandas;<br>
+Макс. бал: 0.6 / Час, хв: 20</p>
+</blockquote></div><div class="el-h3"><h3 data-heading="3. Заповнення значень у чарунках на основі припущень" dir="auto" class="heading" id="3._Заповнення_значень_у_чарунках_на_основі_припущень_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>3. Заповнення значень у чарунках на основі припущень</h3></div><div class="el-p"><p dir="auto"><em>Теорія - 20 хв, практика - 20 хв</em></p></div><div class="el-p"><p dir="auto">Розглянемо третій варіант роботи з відсутніми даними, а саме - заповнення значеннями.<br>
+Для цього використовують метод&nbsp;<code>.fillna()</code>, де аргументом є значення для заміни.</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token string">'EMPTY'</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">first_name</th>
+<th dir="ltr">last_name</th>
+<th dir="ltr">age</th>
+<th dir="ltr">sex</th>
+<th dir="ltr">pre_movie_score</th>
+<th dir="ltr">post_movie_score</th>
+<th dir="auto"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="auto">0</td>
+<td dir="ltr">Tom</td>
+<td dir="ltr">Hanks</td>
+<td dir="auto">63.0</td>
+<td dir="ltr">m</td>
+<td dir="auto">8.0</td>
+<td dir="auto">10.0</td>
+</tr>
+<tr>
+<td dir="auto">1</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+</tr>
+<tr>
+<td dir="auto">2</td>
+<td dir="ltr">Hugh</td>
+<td dir="ltr">Jackman</td>
+<td dir="auto">51.0</td>
+<td dir="ltr">m</td>
+<td dir="ltr">EMPTY</td>
+<td dir="ltr">EMPTY</td>
+</tr>
+<tr>
+<td dir="auto">3</td>
+<td dir="ltr">Oprah</td>
+<td dir="ltr">Winfrey</td>
+<td dir="auto">66.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">6.0</td>
+<td dir="auto">8.0</td>
+</tr>
+<tr>
+<td dir="auto">4</td>
+<td dir="ltr">Emma</td>
+<td dir="ltr">Stone</td>
+<td dir="auto">31.0</td>
+<td dir="ltr">f</td>
+<td dir="auto">7.0</td>
+<td dir="auto">9.0</td>
+</tr>
+</tbody>
+</table></div><div class="el-p"><p dir="auto">Застосовувати таким чином цей метод є поганою практикою, оскільки, як правило рядки мають різні типи значень. Тому має здійснюватися уточнення стовпців.</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">[</span><span class="token string">'age'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-powershell"><code data-line="0" class="language-powershell is-loaded">0    63<span class="token punctuation">.</span>0
+1    30<span class="token punctuation">.</span>0
+2    51<span class="token punctuation">.</span>0
+3    66<span class="token punctuation">.</span>0
+4    31<span class="token punctuation">.</span>0
+Name: age<span class="token punctuation">,</span> dtype: float64
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Для числових значень стовпців можна обрахувати середнє значення, яке у подальшому може бути використане для заміни відсутніх значень, наприклад.</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">[</span><span class="token string">'post_movie_score'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre><code data-line="0">np.float64(9.0)
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">df<span class="token punctuation">[</span><span class="token string">'post_movie_score'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>fillna<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'post_movie_score'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre class="language-powershell"><code data-line="0" class="language-powershell is-loaded">0    10<span class="token punctuation">.</span>0
+1     9<span class="token punctuation">.</span>0
+2     9<span class="token punctuation">.</span>0
+3     8<span class="token punctuation">.</span>0
+4     9<span class="token punctuation">.</span>0
+Name: post_movie_score<span class="token punctuation">,</span> dtype: float64
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Для роботи з відсутніми даними є ще можливість їх заповнити з використанням прогнозованих даних. Для цього використовується методи інтерполяції. Для прикладу використаємо запис який містить ціну квитків різного класу у літаку</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+price_list <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'first'</span><span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span> <span class="token string">'business'</span><span class="token punctuation">:</span> np<span class="token punctuation">.</span>nan<span class="token punctuation">,</span> <span class="token string">'economy-plus'</span><span class="token punctuation">:</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token string">'economy'</span><span class="token punctuation">:</span> <span class="token number">30</span><span class="token punctuation">}</span>
+price_series <span class="token operator">=</span> pd<span class="token punctuation">.</span>Series<span class="token punctuation">(</span>price_list<span class="token punctuation">)</span>
+price_series
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre><code data-line="0">first           100.0
+business          NaN
+economy-plus     50.0
+economy          30.0
+dtype: float64
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-p"><p dir="auto">Для проведення прогнозування може бути використана лінійна інтерполяція. Для цього важливо щоб дані були відсортовані.</p></div><div class="el-pre"><pre class="language-python"><code data-line="0" class="language-python is-loaded">price_series<span class="token punctuation">.</span>interpolate<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-pre"><pre><code data-line="0">first           100.0
+business         75.0
+economy-plus     50.0
+economy          30.0
+dtype: float64
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-h4"><h4 data-heading="🧠Практичне завдання 3" dir="auto" class="heading" id="🧠Практичне_завдання_3_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>🧠Практичне завдання 3</h4></div><div class="el-blockquote"><blockquote dir="auto">
+<p>На основі наданого набору даних (наприклад,&nbsp;<code>movie_scores.csv</code>&nbsp;або власного DataFrame):</p>
+<ol>
+<li data-line="1" dir="auto">Заповнити усі пропущені значення у числових стовпцях середнім значенням відповідного стовпця.</li>
+<li data-line="2" dir="auto">Заповнити пропущені значення у категоріальних стовпцях найбільш поширеним значенням (модою).</li>
+<li data-line="3" dir="auto">Заповнити пропущені значення у стовпці&nbsp;<code>pre_movie_score</code>&nbsp;значенням 0.</li>
+<li data-line="4" dir="auto">Заповнити числовий стовпець (на вибір) використавши метод інтерполяції.</li>
+<li data-line="5" dir="auto">Надати письмове пояснення: у яких випадках доцільно використовувати кожен із підходів до заповнення пропусків.</li>
+</ol>
+<p>TechStack: python;pandas;<br>
+Макс. бал: 0.8 / Час, хв: 20</p>
+</blockquote></div><div class="el-h3"><h3 data-heading="4.  Перевірка теоретичних знань" dir="auto" class="heading" id="4._Перевірка_теоретичних_знань_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>4.  Перевірка теоретичних знань</h3></div><div class="el-p"><p dir="auto"><em>Теорія - 15 хв, практика - 0 хв</em></p></div><div class="el-p"><p dir="auto"><a data-tooltip-position="top" aria-label="" rel="noopener nofollow" class="external-link is-unresolved" href="" target="_self">Посилання на тести</a></p></div><div class="el-h3"><h3 align="center" dir="auto" class="heading" id="ЗАКЛЮЧНА_ЧАСТИНА_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span><strong>ЗАКЛЮЧНА ЧАСТИНА</strong></h3></div><div class="el-h5"><h5 data-heading="Завдання на самостійну підготовку" dir="auto" class="heading" id="Завдання_на_самостійну_підготовку_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Завдання на самостійну підготовку</h5></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">Опрацювати питання, що були розглянуті на груповому занятті.</li>
+<li data-line="1" dir="auto">Практичні питання опрацювати у редакторі коду.</li>
+<li data-line="2" dir="auto">Пройти тести для самоконтролю.</li>
+</ol></div><div class="el-h5"><h5 data-heading="Питання для самоконтролю" dir="auto" class="heading" id="Питання_для_самоконтролю_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Питання для самоконтролю</h5></div><div class="el-p"><p dir="auto"><a data-tooltip-position="top" aria-label="" rel="noopener nofollow" class="external-link is-unresolved" href="" target="_self">Посилання на тести</a></p></div><div class="el-h3"><h3 data-heading="Порядок оцінювання" dir="auto" class="heading" id="Порядок_оцінювання_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Порядок оцінювання</h3></div><div class="el-p"><p dir="auto">Відповідно до РПНД на даному груповому занятті слухач може отримати максимально <strong>3 бали</strong> за 100 бальною шкалою оцінювання даної дисципліни. При цьому, </p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>за контрольне опитування - <strong>1.2 балів</strong>, </li>
+<li data-line="1" dir="auto"><span class="list-bullet"></span>за виконання практичних завдань - <strong>1.8 балів</strong>.</li>
+</ul></div><div class="el-p"><p dir="auto">Контрольне опитування складається з 6 тестових питань, неправильна / відсутня відповідь на питання тесту знижує загальний бал на <strong>0.2</strong>. </p></div><div class="el-p"><p dir="auto">При виконанні практичних завдань нарахування балів розподіляється наступним чином:</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th align="center" dir="ltr">практичне завдання</th>
+<th align="center" dir="ltr">бали</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" dir="auto">1</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">2</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">3</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">4</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">5</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">6</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">7</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">8</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="auto">9</td>
+<td align="center" dir="auto">0.2</td>
+</tr>
+<tr>
+<td align="center" dir="ltr"><strong>Всього</strong></td>
+<td align="center" dir="auto"><strong>1.6</strong></td>
+</tr>
+</tbody>
+</table></div><div class="el-div"><div data-callout-metadata="" data-callout-fold="" data-callout="warning" class="callout"><div class="callout-title" dir="auto"><div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg></div><div class="callout-title-inner">За порушення академічної доброчесності за рішенням викладача може бути знято до 0,5 балів.</div></div></div></div><div class="el-p"><p dir="auto">Виставлення оцінок в журнал успішності за національною шкалою проводиться за критеріями, що визначені у таблиці</p></div><div class="el-table" dir="ltr" style="overflow-x: auto;"><table>
+<thead>
+<tr>
+<th dir="ltr">Оцінка</th>
+<th align="center" dir="auto">5</th>
+<th align="center" dir="auto">4</th>
+<th align="center" dir="auto">3</th>
+<th align="center" dir="auto">2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td dir="ltr">Кількість балів</td>
+<td align="center" dir="auto">[3;2.7]</td>
+<td align="center" dir="auto">(2.7;1.95]</td>
+<td align="center" dir="auto">(1.95;1.5]</td>
+<td align="center" dir="auto">(1.5;0]</td>
+</tr>
+</tbody>
+</table></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"></div></div></div></body></html>
