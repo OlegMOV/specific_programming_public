@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Журнал успішності</title>
+<style>
+  :root {
+    --bg: #f4f4f6;
+    --surface: #ffffff;
+    --border: #e2e4e9;
+    --text: #1f2330;
+    --text-muted: #6b7280;
+    --header-grad-start: #222;
+    --header-grad-end: #3a3f52;
+    --accent: #008cba;
+    --sticky-shadow: rgba(0,0,0,0.06);
+    --row-alt: #fafafb;
+    --row-hover: #eef7fb;
+    --g5: #1e9e5a; --g5-bg: #e4f7ec;
+    --g4: #2f7fd6; --g4-bg: #e7f1fc;
+    --g3: #d3900a; --g3-bg: #fdf1dd;
+    --g2: #d64545; --g2-bg: #fbe6e6;
+    --g-none: #9aa0ab; --g-none-bg: #f0f1f3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16171c;
+      --surface: #1e2028;
+      --border: #2c2f3a;
+      --text: #e7e8ec;
+      --text-muted: #9498a3;
+      --header-grad-start: #101114;
+      --header-grad-end: #23273a;
+      --sticky-shadow: rgba(0,0,0,0.35);
+      --row-alt: #22242c;
+      --row-hover: #263042;
+      --g5: #4ade80; --g5-bg: #143323;
+      --g4: #60a5fa; --g4-bg: #142a42;
+      --g3: #fbbf24; --g3-bg: #3a2e10;
+      --g2: #f87171; --g2-bg: #3a1a1a;
+      --g-none: #6b7280; --g-none-bg: #24262d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", "UAF sans", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header.page-header {
+    background: linear-gradient(135deg, var(--header-grad-start), var(--header-grad-end));
+    color: #fff;
+    padding: 2.5rem 1.5rem 2rem;
+    text-align: center;
+  }
+  header.page-header h1 {
+    margin: 0 0 0.4rem;
+    font-size: 1.9em;
+  }
+  header.page-header p {
+    margin: 0;
+    color: #cfd3dd;
+    font-size: 0.95em;
+  }
+  nav.back-link {
+    display: block;
+    text-align: center;
+    padding: 0.8rem;
+  }
+  nav.back-link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  nav.back-link a:hover { text-decoration: underline; }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    font-size: 0.82em;
+  }
+  .legend .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+  .summary-note {
+    color: var(--text-muted);
+    font-size: 0.85em;
+  }
+
+  .table-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+  }
+  .table-scroll {
+    overflow: auto;
+    max-height: 78vh;
+  }
+  table.grades-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 0.88em;
+  }
+  .grades-table th, .grades-table td {
+    padding: 0.55rem 0.7rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .grades-table th:last-child, .grades-table td:last-child { border-right: none; }
+
+  .grades-table thead th {
+    background: var(--surface);
+    color: var(--text);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-weight: 600;
+    box-shadow: 0 1px 0 var(--border);
+  }
+  .grades-table thead th.corner {
+    left: 0;
+    z-index: 4;
+    text-align: left;
+  }
+  .grades-table tbody th.lesson-name {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background: var(--surface);
+    text-align: left;
+    font-weight: 600;
+    box-shadow: 2px 0 0 var(--border);
+  }
+  .grades-table tbody tr:nth-child(even) td,
+  .grades-table tbody tr:nth-child(even) th.lesson-name {
+    background: var(--row-alt);
+  }
+  .grades-table tbody tr:hover td,
+  .grades-table tbody tr:hover th.lesson-name {
+    background: var(--row-hover);
+  }
+
+  .cell-empty {
+    color: var(--g-none);
+  }
+  .cell-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+  }
+  .ball {
+    font-weight: 600;
+    color: var(--text);
+  }
+  .grade-badge {
+    margin-top: 0.15rem;
+    display: inline-block;
+    min-width: 1.4em;
+    padding: 0.05rem 0.4rem;
+    border-radius: 999px;
+    font-size: 0.85em;
+    font-weight: 700;
+  }
+  .grade-5 { color: var(--g5); background: var(--g5-bg); }
+  .grade-4 { color: var(--g4); background: var(--g4-bg); }
+  .grade-3 { color: var(--g3); background: var(--g3-bg); }
+  .grade-low { color: var(--g2); background: var(--g2-bg); }
+  .grade-none { color: var(--g-none); background: var(--g-none-bg); }
+
+  .state-msg {
+    padding: 3rem 1rem;
+    text-align: center;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+  <header class="page-header">
+    <h1>Журнал успішності</h1>
+    <p>Бали та оцінки за заняттями — джерело даних: <code>assets/grades.json</code></p>
+  </header>
+  <nav class="back-link"><a href="./index.html">&larr; На головну</a></nav>
+
+  <main>
+    <div class="toolbar">
+      <div class="legend">
+        <span class="chip grade-5">5</span>
+        <span class="chip grade-4">4</span>
+        <span class="chip grade-3">3</span>
+        <span class="chip grade-low">1–2</span>
+        <span class="chip grade-none">—</span>
+        <span style="color:var(--text-muted);">бал / оцінка</span>
+      </div>
+      <div class="summary-note" id="summary-note"></div>
+    </div>
+
+    <div class="table-card">
+      <div class="table-scroll">
+        <table class="grades-table" id="grades-table">
+          <thead>
+            <tr id="header-row">
+              <th class="corner">Заняття</th>
+            </tr>
+          </thead>
+          <tbody id="grades-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const jsonUrl = 'assets/grades.json';
+
+    function gradeClass(grade) {
+      if (grade === null || grade === undefined) return 'grade-none';
+      if (grade >= 5) return 'grade-5';
+      if (grade >= 4) return 'grade-4';
+      if (grade >= 3) return 'grade-3';
+      return 'grade-low';
+    }
+
+    function renderCell(entry) {
+      const td = document.createElement('td');
+      if (!entry) {
+        td.innerHTML = '<span class="cell-empty">&mdash;</span>';
+        return td;
+      }
+      const ballText = (entry.ball === null || entry.ball === undefined) ? '&mdash;' : entry.ball;
+      const gradeText = (entry.grade === null || entry.grade === undefined) ? '&mdash;' : entry.grade;
+      td.innerHTML = `<span class="cell-wrap">
+          <span class="ball">${ballText}</span>
+          <span class="grade-badge ${gradeClass(entry.grade)}">${gradeText}</span>
+        </span>`;
+      return td;
+    }
+
+    function render(data) {
+      const students = data.students || [];
+      const grades = data.grades || {};
+      const lessonNames = Object.keys(grades);
+
+      const headerRow = document.getElementById('header-row');
+      students.forEach(s => {
+        const th = document.createElement('th');
+        th.textContent = s;
+        headerRow.appendChild(th);
+      });
+
+      const tbody = document.getElementById('grades-body');
+      lessonNames.forEach(lesson => {
+        const tr = document.createElement('tr');
+        const th = document.createElement('th');
+        th.className = 'lesson-name';
+        th.textContent = lesson;
+        tr.appendChild(th);
+
+        const row = grades[lesson] || {};
+        students.forEach(s => {
+          tr.appendChild(renderCell(row[s]));
+        });
+        tbody.appendChild(tr);
+      });
+
+      document.getElementById('summary-note').textContent =
+        `${lessonNames.length} занять · ${students.length} студентів`;
+    }
+
+    fetch(jsonUrl)
+      .then(resp => {
+        if (!resp.ok) throw new Error('Network response was not ok');
+        return resp.json();
+      })
+      .then(render)
+      .catch(err => {
+        document.querySelector('.table-card').innerHTML =
+          `<div class="state-msg">Не вдалося завантажити ${jsonUrl}: ${err.message}</div>`;
+      });
+  </script>
+</body>
+</html>
