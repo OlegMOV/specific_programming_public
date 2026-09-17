@@ -19,121 +19,94 @@
   "grades": {
     "25_GL": {
       "01": {
-        "ball": 2.7,
+        "ball": 2.5,
         "grade": 3
       },
       "02": {
-        "ball": 3.4,
+        "ball": 3.6,
         "grade": 4
       },
       "03": {
-        "ball": 3.3,
+        "ball": 2.7,
         "grade": 4
       },
       "04": {
-        "ball": 4.1,
-        "grade": 5
-      },
-      "05": {
-        "ball": 3.0,
-        "grade": 3
-      },
-      "06": null,
-      "07": {
-        "ball": 3.9,
+        "ball": 2.7,
         "grade": 4
       },
+      "05": {
+        "ball": 3.5,
+        "grade": 4
+      },
+      "06": {
+        "ball": 3.7,
+        "grade": 5
+      },
+      "07": null,
       "08": {
-        "ball": 2.6,
-        "grade": 3
+        "ball": 2.8,
+        "grade": 4
       },
       "09": {
-        "ball": 3.1,
+        "ball": 2.8,
         "grade": 4
       },
       "10": {
         "ball": 2.7,
-        "grade": 3
+        "grade": 4
       },
       "11": {
         "ball": 2.5,
         "grade": 3
       },
       "12": {
-        "ball": 3.4,
-        "grade": 4
-      },
-      "13": {
-        "ball": 3.8,
-        "grade": 4
-      },
-      "14": {
-        "ball": 2.7,
+        "ball": 2.5,
         "grade": 3
       },
+      "13": {
+        "ball": 2.5,
+        "grade": 3
+      },
+      "14": {
+        "ball": 3.6,
+        "grade": 5
+      },
       "15": {
-        "ball": 2.4,
+        "ball": 2.5,
         "grade": 3
       }
     },
     "26_LW": {
-      "01": {
-        "ball": 3.0,
-        "grade": 3
-      },
+      "01": null,
       "02": {
-        "ball": 3.9,
-        "grade": 4
-      },
-      "03": {
-        "ball": 3.5,
-        "grade": 4
-      },
-      "04": {
-        "ball": 4.6,
+        "ball": 4.7,
         "grade": 5
       },
-      "05": {
-        "ball": 3.1,
-        "grade": 4
-      },
+      "03": null,
+      "04": null,
+      "05": null,
       "06": {
-        "ball": 2.5,
-        "grade": 3
-      },
-      "07": {
-        "ball": 4.2,
-        "grade": 5
-      },
-      "08": {
-        "ball": 2.8,
-        "grade": 3
-      },
-      "09": {
-        "ball": 3.3,
+        "ball": 4.5,
         "grade": 4
+      },
+      "07": null,
+      "08": null,
+      "09": {
+        "ball": 4.8,
+        "grade": 5
       },
       "10": {
-        "ball": 2.9,
-        "grade": 3
+        "ball": 4.7,
+        "grade": 5
       },
-      "11": {
-        "ball": 2.7,
-        "grade": 3
-      },
-      "12": {
-        "ball": 3.7,
-        "grade": 4
-      },
+      "11": null,
+      "12": null,
       "13": null,
       "14": {
-        "ball": 3.0,
-        "grade": 3
+        "ball": 4.8,
+        "grade": 5
       },
-      "15": {
-        "ball": 2.6,
-        "grade": 3
-      }
+      "15": null
     }
   }
 }
